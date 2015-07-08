@@ -1,47 +1,55 @@
-﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Trending Tracks</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>HTML5 Audio Player</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
 </head>
 <body>
-
-<div data-role="page">
-
-	<div data-role="header" data-theme="b">
-		<h1>Trending Tracks</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content" data-inset="true">
-	
-		<ul data-role="listview" data-theme="a">
-			<li>
-				<img src="img/djmagic.jpg">
-				<h2>DJ M@GIC! - BATUCADA MAGICA (For Dj Mago! & Dj Cr@ck)</h2>
-				<audio src="http://k003.kiwi6.com/hotlink/cdi1q3mhgh/DJ_M_at_GIC_-_BATUCADA_MAGICA_For_Dj_Mago_and_Dj_Cr_at_ck_.mp3" controls="controls"></audio>			
-			</li>
-			<li>
-				<img src="img/dante.jpg">
-				<h2>DANTE - PYRAMIDE (By Dj M@gic!)</h2>
-				<audio src="http://k003.kiwi6.com/hotlink/po2glpzt1p/DANTE_-_PYRAMIDE_By_Dj_M_at_gic_.mp3" controls="controls"></audio>			
-			</li>
-			<li>
-				<img src="img/faruko.jpg">
-				<h2>FARRUKO Feat. REYKON - RAPAPAM (By Dj M@gic!)</h2>
-				<audio src="http://k007.kiwi6.com/hotlink/o2lp6f8ppy/FARRUKO_Feat._REYKON_-_RAPAPAM_By_Dj_M_at_gic_.mp3" controls="controls"></audio>			
-			</li>
-			
+<div id="container">
+	<div id="audio-image">
+		<img class="cover" />
+	</div>
+	<div id="audio-player">
+		<div id="audio-info">
+			<span class="artist"></span> - <span class="title"></span>
+		</div>
+		 <input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+		 <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="next"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <ul id="playlist" class="hidden">
+			<li song="Linkin Park - Papercut.mp3" cover="cover1.jpg" artist="Linkin Park">Papercut.mp3</li>
+			<li song="Linkin Park - One Step Closer.mp3" cover="cover1.jpg" artist="Linkin Park">One Step Closer.mp3</li>
+			<li song="Linkin Park - With You.mp3" cover="cover1.jpg" artist="Linkin Park">With You.mp3</li>
+			<li song="Linkin Park - Points Of Authority.mp3" cover="cover1.jpg" artist="Linkin Park">Points Of Authority.mp3</li>
+			<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling.mp3</li>
+			<li song="Linkin Park - Runaway.mp3" cover="cover1.jpg" artist="Linkin Park">Runaway.mp3</li>
+			<li song="Linkin Park - By Myself.mp3" cover="cover1.jpg" artist="Linkin Park">By Myself.mp3</li>
+			<li song="Linkin Park - In The End.mp3" cover="cover1.jpg" artist="Linkin Park">In The End.mp3</li>
+			<li song="Linkin Park - A Place For My Head.mp3" cover="cover1.jpg" artist="Linkin Park">A Place For My Head.mp3</li>
+			<li song="Linkin Park - Forgotten.mp3" cover="cover1.jpg" artist="Linkin Park">Forgotten.mp3</li>
+			<li song="Linkin Park - Cure For The Itch.mp3" cover="cover1.jpg" artist="Linkin Park">Cure For The Itch.mp3</li>
+			<li song="Linkin Park - Pushing Me Away.mp3" cover="cover1.jpg" artist="Linkin Park">Pushing Me Away.mp3</li>
 		</ul>
-	
-	
-	</div><!-- /content -->
+	</div>
 
-</div><!-- /page -->
+</div>
 
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
