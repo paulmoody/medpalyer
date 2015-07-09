@@ -1,176 +1,57 @@
-
-<!-- saved from url=(0069)file:///C:/Users/tatoww/Documents/GitHub/appresto/appresto/index.html -->
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<script src="../appresto/css/source-sans-pro.js"></script>
-<script src="../appresto/lib/iscroll.js"></script>
-<link href="../appresto/styles.css" rel="stylesheet">
-<script src="../appresto/lib/jquery-1.8.2.min.js"></script>
-<link rel="stylesheet" href="css/style.css" media="screen">
-
-<script src="../appresto/phonegap.js"></script>
-<style type="text/css">
-.listado li
-{
-display: inline !important;
-list-style-type: none;
-padding-right: 20px;
-}
-</style>
-<script type="text/javascript" charset="utf-8">
-</script>
-
-<style type="text/css">
-.box{
-position:fixed;
-bottom:-100%;
-left:0%;
-height:100%; 
-background-color: #DBDBDB;
-width: 100%;
-display: block;
-z-index:999999;
-}
-.box-inner {
-    position: absolute;
-    width:100%;
-    top: 0px;
-    bottom: 0px;
-    /*overflow: scroll;*/
-    -webkit-overflow-scrolling: touch;
-}
-a:active {
-    color: #000;
-}
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-</style>
-<script type="text/javascript">
-
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true,
-      pagination:false,
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
- 
-});
-
-
-
-</script>
-
-
+﻿<html>
+<head>
+    <title>HTML5 Audio Player</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
 </head>
-
 <body>
-   
-	 <div id="menu">
-        <ul>
-        	<!--<li><img src="img/menima1.png" alt=""></li>-->
-            <li><a href="">Mi Perfil</a></li>
-            <li><a href="#">Favoritos</a></li>
-            <li><a href="#">Notificaciones</a></li>
-            <li><a href="#">Art&iacute;culos y rese&#65533;as</a></li>
-            <li><a href="#">Sociales</a></li>
-			<li><a href="#">Novedades</a></li>
-			<li><a href="#">Acerca de Flashclicks</a></li>
-			<li><a href="#">Salir</a></li>
-
-
-
-				
-        </ul>
-    </div>
-    <div id="right">
-        <div id="menubar">
-        
-		<ul class="nav">
-		  <li id="button" class="leftm">
-		  <img src="../appresto/img/menuico2.png" /></li>
-		  <li class="rightm">
-		  	<img src="../appresto/img/Search.png" id="puppies"/>
-		  	<!---<div id="wrap">
-			  <form action="" autocomplete="on">
-			  <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
-			  </form>
-			</div>-->
-		  </li>
-		  <li class="centerm">
-		  	<div class="logopri" id="1">
-				<img src="../appresto/img/logonar.jpg" height="40" width="200"></div>
-		  	<div class="logoprititulo" id="1"></div>
-		  	
-		  </li>
+<div id="container">
+	<br>
+	<input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+	<div id="audio-image">
+		<img class="cover" />
+	</div>
+	<div id="audio-player">
+		<div id="audio-info">
+			<span class="artist"></span> - <span class="title"></span>
+		</div>
+		 
+		 <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="next"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <ul id="playlist" class="hidden">
+			<li song="Linkin Park - Papercut.mp3" cover="cover1.jpg" artist="Linkin Park">Papercut.mp3</li>
+			<li song="Linkin Park - One Step Closer.mp3" cover="cover1.jpg" artist="Linkin Park">One Step Closer.mp3</li>
+			<li song="Linkin Park - With You.mp3" cover="cover1.jpg" artist="Linkin Park">With You.mp3</li>
+			<li song="Linkin Park - Points Of Authority.mp3" cover="cover1.jpg" artist="Linkin Park">Points Of Authority.mp3</li>
+			<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling.mp3</li>
+			<li song="Linkin Park - Runaway.mp3" cover="cover1.jpg" artist="Linkin Park">Runaway.mp3</li>
+			<li song="Linkin Park - By Myself.mp3" cover="cover1.jpg" artist="Linkin Park">By Myself.mp3</li>
+			<li song="Linkin Park - In The End.mp3" cover="cover1.jpg" artist="Linkin Park">In The End.mp3</li>
+			<li song="Linkin Park - A Place For My Head.mp3" cover="cover1.jpg" artist="Linkin Park">A Place For My Head.mp3</li>
+			<li song="Linkin Park - Forgotten.mp3" cover="cover1.jpg" artist="Linkin Park">Forgotten.mp3</li>
+			<li song="Linkin Park - Cure For The Itch.mp3" cover="cover1.jpg" artist="Linkin Park">Cure For The Itch.mp3</li>
+			<li song="Linkin Park - Pushing Me Away.mp3" cover="cover1.jpg" artist="Linkin Park">Pushing Me Away.mp3</li>
 		</ul>
-            
-        </div>
+	</div>
 
+</div>
 
- 
-    <div id="id01">
-    <div class="scroll"><ul class="employee-list">
-    <!--<li><a href="maracaibo.html"><img src="img/maracaibo.jpg" style="width:100%"></a></li>
-    <li><a href="bibas.html"><img src="img/bibas.png" style="width:100%"></a></li>
-    <li><a href="movie.html"><img src="img/movieexpress.jpg" style="width:100%"></a></li>-->
-    <li></li>
-    <li></li>
-    <li class="transp" onclick="location.href='bibas.html'">
-	<img src="../appresto/img/bibas.jpg"><a href="bibas.html"><span class="titulo" style="width: 100%">Bibas</span><br><span class="categoria" style="width: 100%">Comida Americana</span><br>Valoracion:<br><span class="categoria" style="width: 100%">
-	<img src="../appresto/img/5star.jpg"></span></a><p style="color:green;font-size:1.2em;line-height:50px">Abierto</p></li>
-    </ul></div>
-    </div>
-    </div>
-    
-<script type="text/javascript">
-
-function GoTopage1()
-{
-        $.mobile.changePage( "piuttosto.html", { transition: "slide"} );        
-}
-
-
-$('#button').toggle( 
-    function() {
-        $('#right').animate({ left: 200 }, 'fast', function() {
-            //$('#button').html('Close');
-        });
-    }, 
-    function() {
-        $('#right').animate({ left: 0 }, 'fast', function() {
-            //$('#button').html('Menu');
-        });
-    }
-);
-
-$('#puppies').toggle(
-function() {
-  $('#1').html('<input id="botoxx" name="Button1" type="text" value="" style="width: 200px; height: 42px; font-size: 20;" />');
-  $('#botoxx').focus();
-},
-function() {
-  $('#1').html('<img src="img/logonar.jpg" />');
-}
-);
-
-
-
-</script>
-
-</body></html>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
