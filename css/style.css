@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
     border: none;
@@ -18,15 +18,19 @@ body{
 }
 
 #container{
-	width:330px;
+	width:100%;
 	min-height:400px;
-	background:#333;
+	/*background:#333;*/
 	overflow:auto;
-	margin:60px auto;
+	margin:auto;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	border:#666 solid 2px;
+	background: -webkit-linear-gradient(left top, rgb(72, 150, 100) , rgb(53, 53, 134)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* Standard syntax (must be last) */
 }
 
 #audio-image{
@@ -34,6 +38,7 @@ body{
 	overflow:hidden;
 	height:200px;
 	margin-bottom:15px;
+	text-align:center;
 }
 
 #audio-info{
@@ -45,7 +50,7 @@ body{
 }
 
 .cover{
-	width:100%;
+	width:90%;
 	z-index:1;
 }
 
@@ -151,5 +156,12 @@ button#next{
 	padding:4px 8px;
 	background:#000;
 	border-radius:5px;
+}
+#grad1 {
+    height: 200px;
+    background: -webkit-linear-gradient(left top, red , blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red , blue); /* Standard syntax (must be last) */
 }
 
