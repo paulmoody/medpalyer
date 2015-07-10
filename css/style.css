@@ -23,10 +23,10 @@ body{
 	/*background:#333;*/
 	overflow:auto;
 	margin:auto;
-	-moz-border-radius:10px;
+	/*-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:#666 solid 2px;
+	border:#666 solid 2px;*/
 	background: -webkit-linear-gradient(left top, rgb(72, 150, 100) , rgb(53, 53, 134)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, rgb(72, 150, 100), rgb(53, 53, 134)); /* For Firefox 3.6 to 15 */
