@@ -1,49 +1,57 @@
-﻿<html>
-<head>
-    <title>HTML5 Audio Player</title>
-    <link rel="stylesheet" href="css/style.css" media="screen">
-</head>
-<body>
-<div id="container">
-	<br>
-	<input id="volume" type="range" min="0" max="10" value="5" />
-		 <br>
-	<div id="audio-image">
-		<img class="cover" />
-	</div>
-	<div id="audio-player">
-		<div id="audio-info">
-			<span class="artist"></span><span class="title"></span>
-		</div>
-		 
-		 <div id="buttons">
-		 <span>
-			<button id="prev"></button>
-			<button id="play"></button>
-			<button id="pause"></button>
-			<!--<button id="stop"></button>-->
-			<button id="next"></button>
-			</span>
-		 </div>
-		 <div class="clearfix"></div>
-		 <div id="tracker">
-			<div id="progressBar">
-				<span id="progress"></span>
-			</div>
-			<span id="duration"></span>
-		 </div>
-		 <div class="clearfix"></div>
-		 <ul id="playlist" class="hidden">
-			<li song="Linkin Park - Papercut.mp3" cover="cover1.jpg"  mp3="http://k007.kiwi6.com/hotlink/o2lp6f8ppy/FARRUKO_Feat._REYKON_-_RAPAPAM_By_Dj_M_at_gic_.mp3" artist="">FARRUKO Feat. REYKON - RAPAPAM (By Dj M@gic!)</li>
-			<li song="Linkin Park - One Step Closer.mp3" cover="cover1.jpg" mp3="http://k003.kiwi6.com/hotlink/l41yy69e8a/DJ_M_at_GIC_-_POSSESSION.mp3" artist="">DJ M@GIC! - POSSESSION</li>
-			<li song="Linkin Park - With You.mp3" cover="cover1.jpg" mp3="http://k003.kiwi6.com/hotlink/dfaipij89z/ONE_DIRECTION_-_BEST_SONG_EVER_By_Dj_M_at_gic_.mp3" artist="">ONE DIRECTION - BEST SONG EVER (By Dj M@gic!)</li>
-			<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" mp3="http://k003.kiwi6.com/hotlink/sf4l7xg2g4/I_love_You_Lord_-_Praise_Gold_I_Love_You_Lord_2010_-_Laurie_Klein.mp3" artist="Linkin Park">I love You Lord - Praise Gold (I Love You Lord) (2010) - Laurie Klein</li>
-		</ul>
-	</div>
+<!DOCTYPE HTML>
+<html>
 
+<head>
+<title>Employee Directory</title>
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<link href="css/jquery.mobile-1.0rc1.min.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/repro.css" media="screen">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<style type="text/css">
+	
+	.imgma{
+		margin:0px; 
+		padding:0px;
+		background-image:url('img/grid1.png');
+		background-repeat:no-repeat;
+		background-size: 100%;
+		height: auto !important;
+		
+	}
+
+
+
+</style>
+</head>
+
+<body>
+ 
+<div id="employeeListPage" data-role="page">
+	<div data-role="header">
+		<h1>Playlist</h1>
+	</div>
+	<div data-role="content">
+		
+		<ul data-role="listview">	
+			<li><a href="employeedetails.html?id=7">song1</a></li>
+			<li><a href="employeedetails.html?id=7">song2</a></li>
+			<li><a href="employeedetails.html?id=7">song3</a></li>
+			<li><a href="employeedetails.html?id=7">song4</a></li>
+			<li><a href="employeedetails.html?id=7">song5</a></li>
+            <li><a href="employeedetails.html?id=7">song6</a></li>
+            <li><a href="employeedetails.html?id=7">song7</a></li>
+		</ul>
+		
+	</div>
 </div>
 
-<script src="js/jquery.js"></script>
-<script src="main.js"></script>
+
+<!--<script src="js/employeelist.js"></script>-->
+<!--<script src="js/employeedetails.js"></script>-->
+<!--<script src="js/reportlist.js"></script>-->
+
 </body>
+
 </html>
